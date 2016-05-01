@@ -7,9 +7,23 @@
 
 	<body>
 		
-		<h1>Material Requests</h1>
+		Name: <input type="text" name="fname" />
+		Password: <input type="password" name="fname" />
+		<button type="button">Login</button>
+		<button type="button">Logout</button>
+		[[Welcome, Sean!]]
 		
-		<table>
+		<hr size="1" />
+		
+		<br />
+		<h1>Rad Materials</h1>
+		<hr size="1" />
+		<br />
+		
+		<h2>Orders</h2>
+		
+		<!-- Orders -->
+		<table border="1">
 			<tr>
 				<td>Name</td>
 				<td>Order ID</td>
@@ -28,18 +42,84 @@
 				<td>2/3/86</td>
 				<td>Completed</td>
 			</tr>
-			
 		</table>
 		
 		<br />
+		<hr size="1" />
+		<br />
 		
+		<h2>Availability</h2>
+		
+		<!-- Materials -->
+		<table border="1">
+			<tr>
+				<td>Material</td>
+				<td>Description</td>
+				<td>Quantity</td>
+			</tr>
+			<tr>
+				<td>Radon</td>
+				<td>Some gas</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>Argon</td>
+				<td>Another gas</td>
+				<td>0</td>
+			</tr>
+		</table>
+		
+		<br />
+		<hr size="1" />
+		<br />
+		
+		<h2>New Requests</h2>
+		
+		<!--
 		<form>
-			Name: <input type="text" name="fname" /> <br/>
-			Request: <input type="text" name="fname" /> <br/>
-			Label: <input type="text" name="fname" /> <br/>
-			<input type="submit" name="fname" /> <br/>
+			Name: <input type="text" name="fname" />
+			Request: <input type="text" name="fname" />
+			Label: <input type="text" name="fname" />
+			<input type="submit" name="fname" />
 		</form>
-					
+		-->
+				
+		<!-- Materials -->
+		Filter: <input type="text" name="fname" />
+		<br />
+		<br />
+		<table border="1">
+			<tr>
+				<td>Material</td>
+				<td>Description</td>
+				<td>Available</td>
+				<td>Request</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Radon</td>
+				<td>Some gas</td>
+				<td>100</td>
+				<td>50</td>
+				<td><button type="button">Add</button></td>
+			</tr>
+			<tr>
+				<td>Argon</td>
+				<td>Another gas</td>
+				<td>0</td>
+				<td>0</td>
+				<td><button type="button">Add</button></td>
+			</tr>
+		</table>
+				
+		<br />
+		<button type="button">Submit</button>
+		
+		<br />
+		<br />
+		<hr size="1" />
+		<br />
+		
 	</body>
 
 </html>
